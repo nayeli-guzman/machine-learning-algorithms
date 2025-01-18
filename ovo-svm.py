@@ -18,9 +18,6 @@ X, y = make_blobs(n_samples = num_samples_total, centers = cluster_centers, n_fe
 # Split into training and testing data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 
-# np.save('./clusters.npy', X)
-X = np.load('./clusters.npy')
-
 # Create the SVM
 svm = LinearSVC(random_state=42)
 
